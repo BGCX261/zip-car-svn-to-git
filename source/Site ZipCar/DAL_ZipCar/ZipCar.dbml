@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ZipCar" Class="ZipCarDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=GSLE01PD01573\SQLEXPRESS;Initial Catalog=ZipCar;Integrated Security=True" SettingsObjectName="DAL_ZipCar.Properties.Settings" SettingsPropertyName="ZipCarConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="usuario" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="senha" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="idCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tipo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Cliente_Usuario" Member="Cliente" ThisKey="idCliente" OtherKey="idCliente" Type="Cliente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Carro_has_Garagem" Member="Carro_has_Garagems">
+    <Type Name="Carro_has_Garagem">
+      <Column Name="idGaragem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idCarro" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Garagem_Carro_has_Garagem" Member="Garagem" ThisKey="idGaragem" OtherKey="idGaragem" Type="Garagem" IsForeignKey="true" />
+      <Association Name="Carro_Carro_has_Garagem" Member="Carro" ThisKey="idCarro" OtherKey="idCarro" Type="Carro" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categoria" Member="Categorias">
+    <Type Name="Categoria">
+      <Column Name="idCategoria" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Categoria_Carro" Member="Carros" ThisKey="idCategoria" OtherKey="idCategoria" Type="Carro" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cliente" Member="Clientes">
+    <Type Name="Cliente">
+      <Column Name="idCliente" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CPFCNPJ" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="pesTip" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="datanasc" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="carteiraNum" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="carteiraVal" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="carteiraCat" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="numCartao" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="cartaoVal" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="telefoneRes" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="telefoneCel" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="cidade" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="uf" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="logradouro" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="complemento" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bairro" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cep" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="sexo" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Cliente_Usuario" Member="Usuarios" ThisKey="idCliente" OtherKey="idCliente" Type="Usuario" />
+      <Association Name="Cliente_Cliente_aluga_Carro" Member="Cliente_aluga_Carros" ThisKey="idCliente" OtherKey="idCliente" Type="Cliente_aluga_Carro" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cliente_aluga_Carro" Member="Cliente_aluga_Carros">
+    <Type Name="Cliente_aluga_Carro">
+      <Column Name="idCliente" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idCarro" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="dataHoraRetirado" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dataHoraDevolvido" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Cliente_Cliente_aluga_Carro" Member="Cliente" ThisKey="idCliente" OtherKey="idCliente" Type="Cliente" IsForeignKey="true" />
+      <Association Name="Carro_Cliente_aluga_Carro" Member="Carro" ThisKey="idCarro" OtherKey="idCarro" Type="Carro" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Garagem" Member="Garagems">
+    <Type Name="Garagem">
+      <Column Name="idGaragem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UF" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="cidade" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="bairro" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="cep" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="logradouro" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="complemento" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="capacidade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="latitude" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="longitude" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="Garagem_Carro_has_Garagem" Member="Carro_has_Garagems" ThisKey="idGaragem" OtherKey="idGaragem" Type="Carro_has_Garagem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Carro" Member="Carros">
+    <Type Name="Carro">
+      <Column Name="idCarro" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="marca" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="modelo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="placa" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="renavam" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="cor" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ar" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="direcao" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[4portas]" Member="_4portas" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="gps" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="valorloc" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="URLimagem" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Carro_Carro_has_Garagem" Member="Carro_has_Garagems" ThisKey="idCarro" OtherKey="idCarro" Type="Carro_has_Garagem" />
+      <Association Name="Carro_Cliente_aluga_Carro" Member="Cliente_aluga_Carros" ThisKey="idCarro" OtherKey="idCarro" Type="Cliente_aluga_Carro" />
+      <Association Name="Categoria_Carro" Member="Categoria" ThisKey="idCategoria" OtherKey="idCategoria" Type="Categoria" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

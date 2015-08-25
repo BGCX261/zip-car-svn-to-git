@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 15.125" name="ZipCar">
+  <DataContextMoniker Name="/ZipCarDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f8f2c0fc-2d49-4fc2-85de-e22eba65035e" absoluteBounds="6.25, 8.125, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/ZipCarDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb4bdb27-ace7-4f37-b7cc-41ff94b81e9d" absoluteBounds="6.265, 8.585, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e4fa33d2-fcf6-4714-b732-5e285bc6880d" absoluteBounds="6.25, 2.875, 2, 1.096153157552084">
+      <DataClassMoniker Name="/ZipCarDataContext/Carro_has_Garagem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89e85644-8ca0-47e7-9d38-b63d2e8f5d36" absoluteBounds="6.265, 3.335, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a826f9bb-b5a5-40f1-b035-14047c3d177e" absoluteBounds="0.75, 2.875, 2, 1.096153157552084">
+      <DataClassMoniker Name="/ZipCarDataContext/Categoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="91f3a2c7-ecae-4cba-877c-5187f9a3f012" absoluteBounds="0.765, 3.335, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c551898-6859-42ee-8ba2-8aa411cef811" absoluteBounds="3.5, 6.625, 2, 4.3830997721354166">
+      <DataClassMoniker Name="/ZipCarDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b0fdce4-bf10-479e-866c-615614c2feb7" absoluteBounds="3.515, 7.085, 1.9700000000000002, 3.823099772135417" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="da417844-d7d5-44a2-be88-8a46d28e7028" absoluteBounds="6.25, 0.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/ZipCarDataContext/Cliente_aluga_Carro" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6c08532-9864-4e38-9f53-d34e0192765d" absoluteBounds="6.265, 1.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="590245a2-aa90-478a-ac4c-3e29ce122e1a" absoluteBounds="3.5, 12.125, 2, 2.7396264648437487">
+      <DataClassMoniker Name="/ZipCarDataContext/Garagem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e87142e-a376-414f-a27c-0ea19bb661b3" absoluteBounds="3.515, 12.585, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 8.83742390950521); (5.91666666666667 : 8.83742390950521 : JumpStart); (6.08333333333333 : 8.83742390950521 : JumpEnd); (6.25 : 8.83742390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ZipCarDataContext/Cliente/Cliente_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="5c551898-6859-42ee-8ba2-8aa411cef811" />
+        <classShapeMoniker Id="f8f2c0fc-2d49-4fc2-85de-e22eba65035e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.71875 : 6.625); (3.71875 : 1.03125); (6.25 : 1.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ZipCarDataContext/Cliente/Cliente_Cliente_aluga_Carro" />
+      <nodes>
+        <classShapeMoniker Id="5c551898-6859-42ee-8ba2-8aa411cef811" />
+        <classShapeMoniker Id="da417844-d7d5-44a2-be88-8a46d28e7028" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.4948132324219); (6 : 13.4948132324219); (6 : 4.69332112630208); (7.25 : 4.69332112630208); (7.25 : 3.97115315755208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ZipCarDataContext/Garagem/Garagem_Carro_has_Garagem" />
+      <nodes>
+        <classShapeMoniker Id="590245a2-aa90-478a-ac4c-3e29ce122e1a" />
+        <classShapeMoniker Id="e4fa33d2-fcf6-4714-b732-5e285bc6880d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fe3fa113-2378-45ce-a658-a27d2484bfe3" absoluteBounds="4, 1.375, 2, 3.0683211263020831">
+      <DataClassMoniker Name="/ZipCarDataContext/Carro" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9392d743-26d9-48f0-af4c-83445be89eb3" absoluteBounds="4.015, 1.835, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 3.42307657877604); (6.25 : 3.42307657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ZipCarDataContext/Carro/Carro_Carro_has_Garagem" />
+      <nodes>
+        <classShapeMoniker Id="fe3fa113-2378-45ce-a658-a27d2484bfe3" />
+        <classShapeMoniker Id="e4fa33d2-fcf6-4714-b732-5e285bc6880d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6 : 1.77492390950521); (6.25 : 1.77492390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ZipCarDataContext/Carro/Carro_Cliente_aluga_Carro" />
+      <nodes>
+        <classShapeMoniker Id="fe3fa113-2378-45ce-a658-a27d2484bfe3" />
+        <classShapeMoniker Id="da417844-d7d5-44a2-be88-8a46d28e7028" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.42307657877604); (3.63541666666667 : 3.42307657877604 : JumpStart); (3.80208333333333 : 3.42307657877604 : JumpEnd); (4 : 3.42307657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ZipCarDataContext/Categoria/Categoria_Carro" />
+      <nodes>
+        <classShapeMoniker Id="a826f9bb-b5a5-40f1-b035-14047c3d177e" />
+        <classShapeMoniker Id="fe3fa113-2378-45ce-a658-a27d2484bfe3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ZipCar", ".", "{384F5DE9-C4DA-46A5-8C53-F02C9090559B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{9E0EBF5A-4DEA-4C71-981D-8AAABAB10FCA}|BLL_ZipCar.dll;{E62102E9-7472-4770-9750-D8CA9076AC9C}|DAL_ZipCar.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ZipCar"
+		Debug.AspNetCompiler.PhysicalPath = "..\ZipCar\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ZipCar\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ZipCar"
+		Release.AspNetCompiler.PhysicalPath = "..\ZipCar\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ZipCar\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1926"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_ZipCar", "..\DAL_ZipCar\DAL_ZipCar.csproj", "{E62102E9-7472-4770-9750-D8CA9076AC9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_ZipCar", "..\BLL_ZipCar\BLL_ZipCar.csproj", "{9E0EBF5A-4DEA-4C71-981D-8AAABAB10FCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{384F5DE9-C4DA-46A5-8C53-F02C9090559B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384F5DE9-C4DA-46A5-8C53-F02C9090559B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384F5DE9-C4DA-46A5-8C53-F02C9090559B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{384F5DE9-C4DA-46A5-8C53-F02C9090559B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E62102E9-7472-4770-9750-D8CA9076AC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62102E9-7472-4770-9750-D8CA9076AC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62102E9-7472-4770-9750-D8CA9076AC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62102E9-7472-4770-9750-D8CA9076AC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0EBF5A-4DEA-4C71-981D-8AAABAB10FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0EBF5A-4DEA-4C71-981D-8AAABAB10FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0EBF5A-4DEA-4C71-981D-8AAABAB10FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0EBF5A-4DEA-4C71-981D-8AAABAB10FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

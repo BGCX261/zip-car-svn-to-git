@@ -1,0 +1,36 @@
+\\acad\usuarios\pastas\0059263\Visual Studio 2010\Projects\ZipCar\BLL_ZipCar\obj\Debug\ResolveAssemblyReference.cache
+E:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\ResolveAssemblyReference.cache
+E:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.dll
+E:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.pdb
+E:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.dll
+E:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.pdb
+E:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.dll
+E:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.pdb
+H:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.dll
+H:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.pdb
+H:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.dll
+H:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.pdb
+H:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\ResolveAssemblyReference.cache
+H:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.dll
+H:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.pdb
+F:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.dll
+F:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.pdb
+F:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.dll
+F:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.pdb
+F:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\ResolveAssemblyReference.cache
+F:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.dll
+F:\Aula\Engenharia de Software II\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.pdb
+U:\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.dll
+U:\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.pdb
+U:\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.dll
+U:\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.pdb
+U:\Site ZipCar\BLL_ZipCar\obj\Debug\ResolveAssemblyReference.cache
+U:\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.dll
+U:\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.pdb
+C:\Users\Admin\Desktop\Faculdade\Engenharia de Software II\Site ZipCar\GoogledSVN\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.dll
+C:\Users\Admin\Desktop\Faculdade\Engenharia de Software II\Site ZipCar\GoogledSVN\Site ZipCar\BLL_ZipCar\bin\Debug\BLL_ZipCar.pdb
+C:\Users\Admin\Desktop\Faculdade\Engenharia de Software II\Site ZipCar\GoogledSVN\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.dll
+C:\Users\Admin\Desktop\Faculdade\Engenharia de Software II\Site ZipCar\GoogledSVN\Site ZipCar\BLL_ZipCar\bin\Debug\DAL_ZipCar.pdb
+C:\Users\Admin\Desktop\Faculdade\Engenharia de Software II\Site ZipCar\GoogledSVN\Site ZipCar\BLL_ZipCar\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Faculdade\Engenharia de Software II\Site ZipCar\GoogledSVN\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.dll
+C:\Users\Admin\Desktop\Faculdade\Engenharia de Software II\Site ZipCar\GoogledSVN\Site ZipCar\BLL_ZipCar\obj\Debug\BLL_ZipCar.pdb
